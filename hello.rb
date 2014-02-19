@@ -1,16 +1,6 @@
-=begin
-def hello(name, age)
-	puts "Welcome #{name}, #{age} is definitely not too old to learn how to code."
+def monthly_payment(salary_per_annum)
+	return salary_per_annum / 12
 end
 
-hello("rob",30)
-hello("jane",72)
-hello("jenny",55)
-=end
-
-def buy(product)
-	puts "Here is your #{product}, thank you"
-end
-
-buy() # no argument given, error raised
-
+puts "If the salary is £30,000 per year,"
+puts "the monthly payment will be #{monthly_payment(30000)}"
