@@ -17,7 +17,12 @@ def input_students
 	students
 end
 
-=begins
+students = input_students
+print_header
+print(students)
+print_footer(students)
+
+=begin
 # first, we print the list of students
 # let's put all students into an array
 students = [
@@ -60,9 +65,9 @@ end
 def print_footer(names)
 	puts "Overall, we have #{names.length} great students"
 end
-=end
 
 # nothing happens until we call the methods
+
 students = input_students
 print_header
 print(students)
