@@ -17,11 +17,6 @@ def input_students
 	students
 end
 
-students = input_students
-print_header
-print(students)
-print_footer(students)
-
 =begin
 # first, we print the list of students
 # let's put all students into an array
@@ -50,7 +45,7 @@ students = [
  {:name => "Anna Yanova", :cohort => :february}, 
  {:name => "Andrew Cumine", :cohort => :february} 
 ]
-
+=end
 def print_header
 	puts "The students of my cohort at Makers Academy"
 	puts "------------"
