@@ -22,3 +22,9 @@ puts "Tyler Rollins"
 puts "Richard Curteis"
 puts "Anna Yanova"
 puts "Andrew Cumine"
+
+print "Overall, we have "
+print 9
+puts " great students"
+
+print "line1\nline2\nline3" #has to be in double quotes!
