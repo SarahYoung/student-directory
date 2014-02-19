@@ -1,6 +1,10 @@
-def monthly_payment(salary_per_annum)
-	return salary_per_annum / 12
+def odd_or_even(number)
+	if number.odd?
+		"odd"
+	else
+		"even"
+	end
 end
 
-puts "If the salary is £30,000 per year,"
-puts "the monthly payment will be #{monthly_payment(30000)}"
+puts odd_or_even(2) #=> will return "even"
+puts odd_or_even(5) #=> will return "odd"
