@@ -1,5 +1,5 @@
 def input_students
-	puts "Please enter the names oft he students"
+	puts "Please enter the names of the students"
 	puts "To finish, just hit return twice"
 	# create an empty array
 	students = []
@@ -17,23 +17,18 @@ def input_students
 	students
 end
 
-def print_header
-	puts "The students of my cohort at Makers Academy"
-	puts "-----------"
-end
+# def print_header
+# 	puts "The students of my cohort at Makers Academy"
+# 	puts "-----------"
 
 def print(students)
-	students.each_with_index do |student, i|
-		puts "#{i+1} #{student[:name]} (#{student[:cohort]} cohort)"
+	students.each do |student|
+		if student[:name][0] == "A"
+		puts "#{student[:name]} (#{student[:cohort]} cohort)"
+		end
 	end
 end
 
-def print_footer(names)
-	puts "Overall, we have #{names.length} great students"
-end
-
-
 students = input_students
 print(students)
-print_header
-print_footer(students)
+# print_header
